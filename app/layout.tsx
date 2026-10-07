@@ -14,10 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "2026 Team PTO Planner",
-  description: "Team PTO requests, balances, approvals, holidays, and coverage overlaps for the 2026 planning cycle.",
-  other: {
-    "codex-preview": "development",
-  },
+  description: "Team PTO plan for December 2026 and January 2027, prepared for management review.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -39,3 +36,4 @@ export default function RootLayout({
     </html>
   );
 }
+
