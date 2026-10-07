@@ -52,6 +52,7 @@ h1 span { color: var(--purple); }
 .hero-note p { margin: 7px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 
 .metric-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 13px; }
+.summary-grid { grid-template-columns: repeat(2,minmax(0,1fr)); max-width: 610px; }
 .metric-card { min-height: 162px; padding: 23px; border-radius: 22px; background: white; border: 1px solid var(--line); box-shadow: 0 5px 20px rgba(31,38,55,.025); }
 .metric-card p { margin: 0 0 20px; color: var(--muted); font-size: 13px; font-weight: 700; }
 .metric-card strong { display: block; font-size: 38px; letter-spacing: -.05em; margin-bottom: 8px; }
@@ -156,6 +157,7 @@ h2 { margin: 0; font-size: clamp(28px, 3vw, 38px); letter-spacing: -.045em; }
 .risk-dot.high { background: #dc5673; box-shadow: 0 0 0 4px rgba(220,86,115,.12); }
 
 .request-ledger { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.schedule-breakdown .request-card:last-child { grid-column: auto; }
 .request-card { padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: white; }
 .request-card:last-child { grid-column: span 2; }
 .request-card-head { display: flex; align-items: center; gap: 12px; }
@@ -238,6 +240,7 @@ footer span:first-child { color: var(--ink); font-weight: 800; }
 .clear-filter:hover { background: var(--purple-soft); }
 
 .calendar-legend { display: flex; gap: 17px; color: var(--muted); font-size: 11px; }
+.employee-legend { flex-wrap: wrap; justify-content: flex-end; }
 .calendar-legend span { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
 .calendar-legend i { width: 12px; height: 12px; display: inline-block; }
 .holiday-key { background: #fff5c9; border: 2px solid #e0b633; border-radius: 50%; }
@@ -390,3 +393,4 @@ footer span:first-child { color: var(--ink); font-weight: 800; }
   .approval-row { grid-template-columns: 160px 1fr 75px; }
   .day-list { grid-template-columns: repeat(2,1fr); }
 }
+
